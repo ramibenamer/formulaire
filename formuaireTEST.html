@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>éage1</title>
+		<meta name="keywords" content="web,html"> 
+	</head>
+	<body>
+	<form method="post" action="script.php">
+		<fieldset>
+			<legend>Candidat:</legend>
+			<fieldset>
+				<legend>Identité:</legend>
+				<label>sexe:</label>
+				<select name="sexe">
+					<option value="h">Homme</option>
+					<option value= "f" selected>Femme</option>
+				</select><br><br>
+				<label>Nom / Prénom :</label>
+				<input type="text" placeholder = "veuillez entrer votre nom"><br><br>
+				<label>adresse:</label><br><br>
+				<textarea rows="5" cols="25">
+						Rue No &#10Boite postal
+				</textarea><br><br>
+				<label>code postal / ville :</label>
+				<input type="text" maxlength="5" >
+				<input type="text" value="Alger" >
+				<label>Wilaya:</label>
+				<select name="wilaya">
+					<option value="01">Adrar</option>
+					<option value= "16" selected>Alger</option>
+				</select><br><br>
+			</fieldset>
+			<fieldset>
+				<legend>Connaissance en informatique:</legend>
+				<label>Plateforme (s):</label>
+				<input type="checkbox" checked name= "ws" value="w">Windows
+				<input type="checkbox" name= "mc" >Mac
+				<input type="checkbox" checked name= "ux">Unix
+			</fieldset>
+			<input type="file" accept=".pdf,.docx"> (	PDF ou DOCX)
+		</fieldset>
+		<label>Envotyer votre CV:</label>
+		<input type ="submit" value =" valider" >
+		<input type ="reset" value="recommencer" >
+	</form>
+	</body>
+</html>
